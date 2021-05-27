@@ -78,7 +78,7 @@ a {
         &:hover,
         &:active {
             svg {
-                fill: #c7b299;
+                fill: #5557b8;
             }
         }
     }
@@ -89,7 +89,7 @@ a {
         &:hover,
         &:active {
             svg {
-                fill: #c7b299;
+                fill: #5557b8;
             }
         }
     }
@@ -108,7 +108,7 @@ a {
     cursor: pointer;
     width: 170px;
     height: 53px;
-    background-color: #998675;
+    background-color: #767599;
     border-radius: 3px;
     border: none;
 
@@ -121,7 +121,7 @@ a {
     text-align: center;
     &:hover,
     &:active {
-        box-shadow: 0 4px 2px -2px #736357;
+        box-shadow: 0 4px 2px -2px #595773;
     }
 }
 
@@ -164,7 +164,7 @@ a {
         position: relative;
         &::after {
             content: "";
-            background-color: #bfab94;
+            background-color: #9594bf;
             width: 0%;
             height: 3px;
             position: absolute;
@@ -172,7 +172,7 @@ a {
             left: 0px;
         }
         &:hover {
-            color: #bfab94;
+            color: #9894bf;
             &::after {
                 width: 100%;
                 transition: width 0.5s ease-in-out;
@@ -316,10 +316,10 @@ a {
             &:active {
                 cursor: pointer;
                 svg {
-                    fill: #c7b299;
+                    fill: #5557b8;
                 }
                 .title {
-                    color: #c7b299;
+                    color: #5557b8;
                 }
             }
             & svg {
@@ -392,7 +392,7 @@ a {
     min-width: 100vw;
     height: 150px;
     background-color: #f4f5f8;
-    background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+    background-image: linear-gradient(90deg, #1c1921 0%, #2b274e 100%);
     .title {
         color: #ffffff;
         font-family: "Raleway", sans-serif;
@@ -418,7 +418,7 @@ a {
             line-height: 20px;
             font-weight: 300;
             text-transform: uppercase;
-            color: #c7b299;
+            color: #5557b8;
         }
         &__list {
             display: flex;
@@ -470,7 +470,7 @@ a {
     cursor: pointer;
     &:active,
     &:hover {
-        background-color: #998675;
+        background-color: #758299;
         color: #ffffff;
     }
 }
@@ -508,7 +508,7 @@ a {
     &__link {
         &:hover {
             svg {
-                fill: #c7b299;
+                fill: #5557b8;
             }
         }
     }
@@ -537,7 +537,7 @@ a {
             left: 0;
         }
         .project-article__text-wrapper {
-            background-color: #362f2d;
+            background-color: #2d2d36;
             &::after {
                 border-bottom: 20px solid #362f2d;
             }
@@ -546,7 +546,7 @@ a {
             color: #ffffff;
         }
         .text {
-            color: #c7b299;
+            color: #5557b8;
         }
     }
 
@@ -581,7 +581,7 @@ a {
             font-size: 20px;
             line-height: 1.2;
             font-weight: 500;
-            color: #c7b299;
+            color: #5557b8;
             text-align: left;
             margin: 0;
         }
@@ -670,15 +670,15 @@ a {
             border: none;
         }
         .title {
-            color: #c7b299;
+            color: #5557b8;
         }
         .calendar-date {
             z-index: 1;
             &__day {
-                background-color: #c7b299;
+                background-color: #5557b8;
             }
             &__month {
-                background-color: #a48d72;
+                background-color: #727ea4;
             }
         }
     }
@@ -705,7 +705,7 @@ a {
         font-size: 14px;
         line-height: 20px;
         font-weight: 300;
-        color: #c7b299;
+        color: #5557b8;
     }
     &__wrapper {
         display: flex;
@@ -777,7 +777,7 @@ a {
         height: 0;
         border-style: solid;
         border-width: 0 5px 10px 5px;
-        border-color: transparent transparent #c7b299 transparent;
+        border-color: transparent transparent #5557b8 transparent;
         transform: rotate(90deg);
         display: block;
         position: relative;
@@ -809,7 +809,7 @@ a {
         &:hover,
         &:active {
             .text {
-                color: #8f8170;
+                color: #70788f;
             }
             .posts__date {
                 color: #d7d7d7;
@@ -840,7 +840,7 @@ a {
 
 .credentials {
     min-height: 111px;
-    background-color: #111111;
+    background-color: #1c1c27;
     &__container {
         display: flex;
         justify-content: space-between;
@@ -861,7 +861,7 @@ a {
         @extend .text;
         &:hover,
         &:active {
-            color: #c7b299;
+            color: #5557b8;
         }
     }
 }

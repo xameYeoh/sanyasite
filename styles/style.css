@@ -137,7 +137,7 @@ a {
 }
 
 .navigation__link_cart:hover svg, .navigation__link_cart:active svg {
-  fill: #c7b299;
+  fill: #5557b8;
 }
 
 .navigation__search-button svg {
@@ -145,7 +145,7 @@ a {
 }
 
 .navigation__search-button:hover svg, .navigation__search-button:active svg {
-  fill: #c7b299;
+  fill: #5557b8;
 }
 
 .light-brown-button {
@@ -153,7 +153,7 @@ a {
   cursor: pointer;
   width: 170px;
   height: 53px;
-  background-color: #998675;
+  background-color: #767599;
   border-radius: 3px;
   border: none;
   font-size: 14px;
@@ -166,8 +166,8 @@ a {
 }
 
 .light-brown-button:hover, .light-brown-button:active {
-  -webkit-box-shadow: 0 4px 2px -2px #736357;
-          box-shadow: 0 4px 2px -2px #736357;
+  -webkit-box-shadow: 0 4px 2px -2px #595773;
+          box-shadow: 0 4px 2px -2px #595773;
 }
 
 .logo {
@@ -245,7 +245,7 @@ a {
 
 .header__navigation-link::after {
   content: "";
-  background-color: #bfab94;
+  background-color: #9594bf;
   width: 0%;
   height: 3px;
   position: absolute;
@@ -254,7 +254,7 @@ a {
 }
 
 .header__navigation-link:hover {
-  color: #bfab94;
+  color: #9894bf;
 }
 
 .header__navigation-link:hover::after {
@@ -445,11 +445,11 @@ a {
 }
 
 .phases-upper-row-card:hover svg, .phases-upper-row-card:active svg {
-  fill: #c7b299;
+  fill: #5557b8;
 }
 
 .phases-upper-row-card:hover .title, .phases-upper-row-card:active .title {
-  color: #c7b299;
+  color: #5557b8;
 }
 
 .phases-upper-row-card svg {
@@ -535,8 +535,8 @@ a {
   min-width: 100vw;
   height: 150px;
   background-color: #f4f5f8;
-  background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
-  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#1c1921), to(#2b274e));
+  background-image: linear-gradient(90deg, #1c1921 0%, #2b274e 100%);
 }
 
 .aside .title {
@@ -572,7 +572,7 @@ a {
   line-height: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  color: #c7b299;
+  color: #5557b8;
 }
 
 .aside-statistics__list {
@@ -644,7 +644,7 @@ a {
 }
 
 .white-button:active, .white-button:hover {
-  background-color: #998675;
+  background-color: #758299;
   color: #ffffff;
 }
 
@@ -701,7 +701,7 @@ a {
 }
 
 .project-article__link:hover svg {
-  fill: #c7b299;
+  fill: #5557b8;
 }
 
 .project-article svg {
@@ -729,7 +729,7 @@ a {
 }
 
 .project-article:hover .project-article__text-wrapper, .project-article:active .project-article__text-wrapper {
-  background-color: #362f2d;
+  background-color: #2d2d36;
 }
 
 .project-article:hover .project-article__text-wrapper::after, .project-article:active .project-article__text-wrapper::after {
@@ -741,7 +741,7 @@ a {
 }
 
 .project-article:hover .text, .project-article:hover .credentials__link, .project-article:active .text, .project-article:active .credentials__link {
-  color: #c7b299;
+  color: #5557b8;
 }
 
 .project-article__image {
@@ -787,7 +787,7 @@ a {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
-  color: #c7b299;
+  color: #5557b8;
   text-align: left;
   margin: 0;
 }
@@ -904,7 +904,7 @@ a {
 }
 
 .product-article:hover .title {
-  color: #c7b299;
+  color: #5557b8;
 }
 
 .product-article:hover .calendar-date {
@@ -912,11 +912,11 @@ a {
 }
 
 .product-article:hover .calendar-date__day {
-  background-color: #c7b299;
+  background-color: #5557b8;
 }
 
 .product-article:hover .calendar-date__month {
-  background-color: #a48d72;
+  background-color: #727ea4;
 }
 
 .product-article .title {
@@ -943,7 +943,7 @@ a {
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
-  color: #c7b299;
+  color: #5557b8;
 }
 
 .product-article__wrapper {
@@ -1047,7 +1047,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 5px 10px 5px;
-  border-color: transparent transparent #c7b299 transparent;
+  border-color: transparent transparent #5557b8 transparent;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   display: block;
@@ -1084,7 +1084,7 @@ a {
 }
 
 .posts__item:hover .text, .posts__item:hover .credentials__link, .posts__item:active .text, .posts__item:active .credentials__link {
-  color: #8f8170;
+  color: #70788f;
 }
 
 .posts__item:hover .posts__date, .posts__item:active .posts__date {
@@ -1115,7 +1115,7 @@ a {
 
 .credentials {
   min-height: 111px;
-  background-color: #111111;
+  background-color: #1c1c27;
 }
 
 .credentials__container {
@@ -1146,7 +1146,7 @@ a {
 }
 
 .credentials__link:hover, .credentials__link:active {
-  color: #c7b299;
+  color: #5557b8;
 }
 
 @media (max-width: 576px) {
