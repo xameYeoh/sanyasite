@@ -96,26 +96,10 @@ a {
 }
 
 @mixin responsive-image-background($url) {
-    //  Location of the image
-    // background-image: url($url);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($url);
-
-    //   Background image is centered vertically and horizontally at all times
     background-position: center center;
-
-    //    Background image doesn't tile
     background-repeat: no-repeat;
-
-    // //    Background image is fixed in the viewport so that it doesn't move when
-    // //      the content's height is greater than the image's height
-    // background-attachment: fixed;
-
-    //    This is what makes the background image rescale based
-    //      on the container's size
     background-size: cover;
-
-    //    Set a background color that will be displayed
-    //      while the background image is loading
     background-color: #464646;
 }
 
@@ -337,10 +321,6 @@ a {
                 .title {
                     color: #c7b299;
                 }
-                // .text::after {
-                //     background-color: #c7b299;
-                //     animation: spin 2s infinite;
-                // }
             }
             & svg {
                 width: 48px;
@@ -354,20 +334,6 @@ a {
                 font-weight: 700;
                 line-height: 1.2;
                 text-align: center;
-            }
-
-            .text {
-                // position: relative;
-                // &::after {
-                //     content: "";
-                //     background-color: rgb(241, 238, 233);
-                //     display: block;
-                //     width: 70px;
-                //     height: 3px;
-                //     position: absolute;
-                //     top: 100px;
-                //     left: 95px;
-                // }
             }
         }
     }
@@ -392,12 +358,10 @@ a {
     margin: auto;
 }
 
-/* Hide the images by default */
 .carousel {
     display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -414,13 +378,11 @@ a {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -440,19 +402,7 @@ a {
     .text {
         margin: 0;
     }
-    // &-purchase {
-    //     display: flex;
-    //     &__container {
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: space-between;
-    //     }
-    //     &__text-wrapper {
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: flex-start;
-    //     }
-    // }
+
     &-statistics {
         min-height: 300px;
         display: flex;
@@ -650,51 +600,6 @@ a {
     padding: 40px 0;
 }
 
-// .video {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     position: relative;
-//     background: #eeeeee;
-//     position: relative;
-//     overflow: hidden;
-
-//     &-file {
-//         min-width: 100%;
-//         min-height: 100%;
-//         width: auto;
-//         height: auto;
-
-//         object-fit: cover;
-//         overflow: hidden;
-
-//         display: block;
-//         top: 0;
-//         bottom: 0;
-//         right: 0;
-//         left: 0;
-//         margin: auto;
-//         box-sizing: border-box;
-//     }
-//     &__content {
-//         width: 552px;
-//         height: 314px;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: space-between;
-//         align-items: center;
-//         position: absolute;
-//         margin: 0 auto;
-//         content: "";
-//         top: 450px;
-//         left: auto;
-//         .title,
-//         .text {
-//             color: #ffffff;
-//         }
-//     }
-// }
-
 .mobile-product {
     padding: 80px 0 0;
     &__container {
@@ -863,24 +768,6 @@ a {
         justify-content: space-between;
         padding: 0 0 40px;
     }
-    // &__button_left {
-    //     width: 22px;
-    //     height: 22px;
-    //     background: none;
-    //     border: none;
-    //     & svg {
-    //         fill: #d1d1d1;
-    //     }
-    //     &:hover,
-    //     &:active {
-    //         & svg {
-    //             fill: #c7b299;
-    //         }
-    //     }
-    // }
-    // &__button_right {
-    //     @extend .sessions__button_left;
-    // }
 }
 
 .read-more-link {
@@ -899,29 +786,6 @@ a {
     }
 }
 
-// .sponsors {
-//     background: url(../images/footer-bg-mountains.png);
-//     background-size: cover;
-//     height: 489px;
-//     display: flex;
-//     align-items: center;
-//     box-sizing: border-box;
-//     &__wrapper {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//     }
-//     &__link {
-//         &:hover,
-//         :active {
-//             img {
-//                 animation: scale 2s infinite;
-//                 animation-direction: alternate;
-//             }
-//         }
-//     }
-// }
-
 .footer {
     .text {
         font-size: 14px;
@@ -931,44 +795,6 @@ a {
         margin: 0;
     }
 }
-
-// .socials {
-//     @extend .section;
-//     background-color: #191919;
-//     &__about-company {
-//         background: #191919;
-//         min-height: 300px;
-//         width: 258px;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         .text {
-//             margin: 30px 0;
-//         }
-//     }
-//     &__read-more-link {
-//         @extend .product-article__link;
-//         color: #d1d1d1;
-//         span {
-//             border-color: transparent transparent #d1d1d1 transparent;
-//         }
-//     }
-//     .text {
-//         text-align: left;
-//     }
-//     .title {
-//         text-align: left;
-//         font-size: 24px;
-//         line-height: 1.2;
-//         font-weight: 700;
-//         color: #ffffff;
-//     }
-
-//     &__container {
-//         display: flex;
-//         justify-content: space-between;
-//     }
-// }
 
 .posts {
     width: 270px;
