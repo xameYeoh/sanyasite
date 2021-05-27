@@ -1,5 +1,4 @@
 @import "reset.scss";
-@import "fonts.scss";
 
 @keyframes scale {
     to {
@@ -29,7 +28,8 @@ a {
 
 .text {
     font-size: 14px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     color: rgb(140, 140, 140);
     line-height: 1.714;
     text-align: center;
@@ -42,9 +42,9 @@ a {
 
 .title {
     font-size: 30px;
-    font-family: "Raleway SemiBold";
+    font-family: "Raleway", sans-serif;
     color: rgb(85, 85, 85);
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.2;
     text-align: center;
     margin-bottom: 24px;
@@ -52,7 +52,7 @@ a {
 
 .page-subject {
     font-size: 52px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
@@ -97,7 +97,8 @@ a {
 
 @mixin responsive-image-background($url) {
     //  Location of the image
-    background-image: url($url);
+    // background-image: url($url);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($url);
 
     //   Background image is centered vertically and horizontally at all times
     background-position: center center;
@@ -105,9 +106,9 @@ a {
     //    Background image doesn't tile
     background-repeat: no-repeat;
 
-    //    Background image is fixed in the viewport so that it doesn't move when
-    //      the content's height is greater than the image's height
-    background-attachment: fixed;
+    // //    Background image is fixed in the viewport so that it doesn't move when
+    // //      the content's height is greater than the image's height
+    // background-attachment: fixed;
 
     //    This is what makes the background image rescale based
     //      on the container's size
@@ -128,7 +129,7 @@ a {
     border: none;
 
     font-size: 14px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
@@ -142,7 +143,7 @@ a {
 
 .logo {
     font-size: 34px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: right;
@@ -157,11 +158,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     color: #ffffff;
     @include responsive-image-background("../images/header-background.png");
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
@@ -248,16 +250,10 @@ a {
 
 .slider {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: #ffffff;
-    &__title {
-        font-family: "Raleway";
-        font-size: 36px;
-        color: rgb(255, 255, 255);
-        line-height: 1.2;
-        text-align: center;
-    }
+
     &__central-page-part {
         display: flex;
         flex-direction: column;
@@ -265,13 +261,20 @@ a {
         width: 595px;
         .text {
             font-size: 16px;
-            font-family: "Montserrat Light";
-            font-weight: 300;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
             font-style: normal;
             color: rgb(255, 255, 255);
             line-height: 1.5;
             text-align: center;
         }
+    }
+    &__title {
+        font-family: "Raleway", sans-serif;
+        font-size: 36px;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: center;
     }
     &__button {
         width: 40px;
@@ -295,6 +298,15 @@ a {
                 transform: scale(1, -1);
             }
         }
+        &_down {
+            background: url(../icons/header-left-button-icon.png);
+            transform: rotate(270deg);
+            &:hover,
+            &:active {
+                background: url(../icons/header-right-button-icon-active.png);
+                transform: rotate(450deg);
+            }
+        }
         & svg:hover,
         & svg:active {
             fill: black;
@@ -302,7 +314,7 @@ a {
     }
 }
 
-.projects {
+.phases {
     padding: 80px 0 0 0;
     &-upper-row {
         min-height: 280px;
@@ -325,10 +337,10 @@ a {
                 .title {
                     color: #c7b299;
                 }
-                .text::after {
-                    background-color: #c7b299;
-                    animation: spin 2s infinite;
-                }
+                // .text::after {
+                //     background-color: #c7b299;
+                //     animation: spin 2s infinite;
+                // }
             }
             & svg {
                 width: 48px;
@@ -337,30 +349,30 @@ a {
 
             &__title {
                 font-size: 22px;
-                font-family: "Raleway SemiBold";
+                font-family: "Raleway", sans-serif;
                 color: rgb(85, 85, 85);
-                font-weight: normal;
+                font-weight: 700;
                 line-height: 1.2;
                 text-align: center;
             }
 
             .text {
-                position: relative;
-                &::after {
-                    content: "";
-                    background-color: rgb(241, 238, 233);
-                    display: block;
-                    width: 70px;
-                    height: 3px;
-                    position: absolute;
-                    top: 100px;
-                    left: 95px;
-                }
+                // position: relative;
+                // &::after {
+                //     content: "";
+                //     background-color: rgb(241, 238, 233);
+                //     display: block;
+                //     width: 70px;
+                //     height: 3px;
+                //     position: absolute;
+                //     top: 100px;
+                //     left: 95px;
+                // }
             }
         }
     }
 }
-.projects-lower-column {
+.phases-lower-column {
     padding: 80px 0 0 0;
     background-color: #fbfaf8;
     min-height: 700px;
@@ -374,6 +386,46 @@ a {
     }
 }
 
+.carousel-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.carousel {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .aside {
     min-width: 100vw;
     height: 150px;
@@ -381,38 +433,38 @@ a {
     background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
     .title {
         color: #ffffff;
-        font-family: "Raleway";
+        font-family: "Raleway", sans-serif;
         font-weight: 400;
         margin: 0;
     }
     .text {
         margin: 0;
     }
-    &-purchase {
-        display: flex;
-        &__container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        &__text-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
+    // &-purchase {
+    //     display: flex;
+    //     &__container {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: space-between;
+    //     }
+    //     &__text-wrapper {
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: flex-start;
+    //     }
+    // }
     &-statistics {
         min-height: 300px;
         display: flex;
         align-items: center;
         .title {
-            font-family: "Montserrat Light";
+            font-family: "Montserrat", sans-serif;
             font-size: 48px;
             line-height: 36px;
             font-weight: 200;
         }
         .text {
-            font-family: "Montserrat Light";
+            font-family: "Montserrat", sans-serif;
             line-height: 20px;
             font-weight: 300;
             text-transform: uppercase;
@@ -473,7 +525,7 @@ a {
     }
 }
 
-.latest-projects-section {
+.latest-phases-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -598,50 +650,50 @@ a {
     padding: 40px 0;
 }
 
-.video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    background: #eeeeee;
-    position: relative;
-    overflow: hidden;
+// .video {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     position: relative;
+//     background: #eeeeee;
+//     position: relative;
+//     overflow: hidden;
 
-    &-file {
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
+//     &-file {
+//         min-width: 100%;
+//         min-height: 100%;
+//         width: auto;
+//         height: auto;
 
-        object-fit: cover;
-        overflow: hidden;
+//         object-fit: cover;
+//         overflow: hidden;
 
-        display: block;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-        box-sizing: border-box;
-    }
-    &__content {
-        width: 552px;
-        height: 314px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        margin: 0 auto;
-        content: "";
-        top: 450px;
-        left: auto;
-        .title,
-        .text {
-            color: #ffffff;
-        }
-    }
-}
+//         display: block;
+//         top: 0;
+//         bottom: 0;
+//         right: 0;
+//         left: 0;
+//         margin: auto;
+//         box-sizing: border-box;
+//     }
+//     &__content {
+//         width: 552px;
+//         height: 314px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: center;
+//         position: absolute;
+//         margin: 0 auto;
+//         content: "";
+//         top: 450px;
+//         left: auto;
+//         .title,
+//         .text {
+//             color: #ffffff;
+//         }
+//     }
+// }
 
 .mobile-product {
     padding: 80px 0 0;
@@ -650,6 +702,7 @@ a {
         justify-content: space-between;
         align-items: center;
         width: 1140px;
+        padding-bottom: 50px;
     }
     &__text-wrapper {
         width: 657px;
@@ -743,7 +796,7 @@ a {
         text-align: left;
     }
     &__link {
-        font-family: "Montserrat Light";
+        font-family: "Montserrat", sans-serif;
         font-size: 14px;
         line-height: 20px;
         font-weight: 300;
@@ -777,7 +830,7 @@ a {
         justify-content: center;
         background-color: #363636;
         border-radius: 3px 3px 0px 0px;
-        font-family: "Montserrat Light";
+        font-family: "Montserrat", sans-serif;
         color: #ffffff;
         font-size: 24px;
         line-height: 20px;
@@ -791,7 +844,7 @@ a {
         justify-content: center;
         background-color: #252525;
         border-radius: 0px 0px 3px 3px;
-        font-family: "Roboto";
+        font-family: "Roboto", sans-serif;
         font-size: 12px;
         line-height: 20px;
         font-weight: 400;
@@ -799,7 +852,7 @@ a {
     }
 }
 
-.recent-products {
+.sessions {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -810,24 +863,24 @@ a {
         justify-content: space-between;
         padding: 0 0 40px;
     }
-    &__button_left {
-        width: 22px;
-        height: 22px;
-        background: none;
-        border: none;
-        & svg {
-            fill: #d1d1d1;
-        }
-        &:hover,
-        &:active {
-            & svg {
-                fill: #c7b299;
-            }
-        }
-    }
-    &__button_right {
-        @extend .recent-products__button_left;
-    }
+    // &__button_left {
+    //     width: 22px;
+    //     height: 22px;
+    //     background: none;
+    //     border: none;
+    //     & svg {
+    //         fill: #d1d1d1;
+    //     }
+    //     &:hover,
+    //     &:active {
+    //         & svg {
+    //             fill: #c7b299;
+    //         }
+    //     }
+    // }
+    // &__button_right {
+    //     @extend .sessions__button_left;
+    // }
 }
 
 .read-more-link {
@@ -846,28 +899,28 @@ a {
     }
 }
 
-.sponsors {
-    background: url(../images/footer-bg-mountains.png);
-    background-size: cover;
-    height: 489px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__link {
-        &:hover,
-        :active {
-            img {
-                animation: scale 2s infinite;
-                animation-direction: alternate;
-            }
-        }
-    }
-}
+// .sponsors {
+//     background: url(../images/footer-bg-mountains.png);
+//     background-size: cover;
+//     height: 489px;
+//     display: flex;
+//     align-items: center;
+//     box-sizing: border-box;
+//     &__wrapper {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//     }
+//     &__link {
+//         &:hover,
+//         :active {
+//             img {
+//                 animation: scale 2s infinite;
+//                 animation-direction: alternate;
+//             }
+//         }
+//     }
+// }
 
 .footer {
     .text {
@@ -879,43 +932,43 @@ a {
     }
 }
 
-.socials {
-    @extend .section;
-    background-color: #191919;
-    &__about-company {
-        background: #191919;
-        min-height: 300px;
-        width: 258px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        .text {
-            margin: 30px 0;
-        }
-    }
-    &__read-more-link {
-        @extend .product-article__link;
-        color: #d1d1d1;
-        span {
-            border-color: transparent transparent #d1d1d1 transparent;
-        }
-    }
-    .text {
-        text-align: left;
-    }
-    .title {
-        text-align: left;
-        font-size: 24px;
-        line-height: 1.2;
-        font-weight: 700;
-        color: #ffffff;
-    }
+// .socials {
+//     @extend .section;
+//     background-color: #191919;
+//     &__about-company {
+//         background: #191919;
+//         min-height: 300px;
+//         width: 258px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-start;
+//         .text {
+//             margin: 30px 0;
+//         }
+//     }
+//     &__read-more-link {
+//         @extend .product-article__link;
+//         color: #d1d1d1;
+//         span {
+//             border-color: transparent transparent #d1d1d1 transparent;
+//         }
+//     }
+//     .text {
+//         text-align: left;
+//     }
+//     .title {
+//         text-align: left;
+//         font-size: 24px;
+//         line-height: 1.2;
+//         font-weight: 700;
+//         color: #ffffff;
+//     }
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
-}
+//     &__container {
+//         display: flex;
+//         justify-content: space-between;
+//     }
+// }
 
 .posts {
     width: 270px;
@@ -939,7 +992,7 @@ a {
     }
 
     &__date {
-        font-family: "Montserrat Light";
+        font-family: "Montserrat", sans-serif;
         font-size: 12px;
         line-height: 20px;
         font-weight: 300;
@@ -977,9 +1030,6 @@ a {
         display: flex;
         justify-content: space-between;
     }
-    &__authors {
-        @extend .credentials__info;
-    }
 
     &__link {
         @extend .text;
@@ -993,10 +1043,10 @@ a {
 @media (max-width: 576px) {
     .navigation,
     .header__radio,
-    .projects-lower-column,
+    .phases-lower-column,
     .aside,
     .video-section,
-    .latest-projects-section,
+    .latest-phases-section,
     .sponsors,
     .socials,
     .slider {
@@ -1046,11 +1096,11 @@ a {
         }
     }
 
-    .projects-upper-row {
+    .phases-upper-row {
         flex-direction: column;
         align-items: center;
     }
-    .latest-projects-section {
+    .latest-phases-section {
         &__text-wrapper {
             max-width: 757px;
             display: flex;
@@ -1079,7 +1129,7 @@ a {
             max-width: 350px;
         }
     }
-    .recent-products {
+    .sessions {
         &__wrapper {
             flex-direction: column;
             align-items: center;
