@@ -1163,8 +1163,12 @@ a {
   fill: #959595;
 }
 
-.credentials .socials__link:hover svg, .credentials .socials__link:active svg {
+.credentials .socials .vk-link:hover svg, .credentials .socials .vk-link:active svg {
   fill: #5557b8;
+}
+
+.credentials .socials .whatsapp-link:hover svg, .credentials .socials .whatsapp-link:active svg {
+  fill: #54cc61;
 }
 
 @media (max-width: 576px) {

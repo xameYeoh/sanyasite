@@ -872,10 +872,20 @@ a {
             svg {
                 fill: #959595;
             }
+        }
+        .vk-link {
             &:hover,
             &:active {
                 svg {
                     fill: #5557b8;
+                }
+            }
+        }
+        .whatsapp-link {
+            &:hover,
+            &:active {
+                svg {
+                    fill: #54cc61;
                 }
             }
         }
